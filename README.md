@@ -1,5 +1,14 @@
 # TP-Real-Time-Data-Streaming
 
+## Etapes du projet
+
+Dans ce projet on va passer par plusieurs étapes dans le but de recevoir des informations météorologiques de 5 villes d'une API météo et en passant par des outils pour manipuler les données comme Spark et Kafka.
+
+CITIES = ['Paris', 'London', 'Tokyo', 'Antananarivo', 'New York']
+
+Pour compléter ce projet il va falloir configurer une clé API qui permettra d'accéder aux données météorologiques et qui sera appelé par le producer Kafka qu'on aura configuré précédemment.
+
+Ensuite après que le producer Kafka a capté les événements réglementés par l'utilisateur on va traiter les données avec Spark. Avec Spark on va lire les données météorologiques situés sur un topic Kafka et à partir de cela les restituer et écrire de nouvelles informations qui seront toutes envoyées vers un nouveau topic et lues sur une console.
 
 ## Configuration kafka et pyspark
 
